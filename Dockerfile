@@ -12,7 +12,7 @@ RUN apt-get install -y awscli
 # copy mongodb backup script to /
 COPY ./awesome_backup.sh ./
 
-RUN chmod +x ./awesome_backup.sh
+RUN chmod +x ./backup.sh
 
 # Run the command on container startup
 CMD ["bash"]

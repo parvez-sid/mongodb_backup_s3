@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y mongo-tools
 RUN apt-get install -y awscli
 
 # copy mongodb backup script to /
-COPY ./awesome_backup.sh ./
+COPY ./backup.sh ./
 
 RUN chmod +x ./backup.sh
 
